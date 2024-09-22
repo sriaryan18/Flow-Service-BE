@@ -36,4 +36,6 @@ public class Flow {
     @JdbcTypeCode(SqlTypes.JSON)
     private List<Map<String, Object>> allTasks;  // this will be [{taskKey:string, status:boolean}]
 
+
+
 }
