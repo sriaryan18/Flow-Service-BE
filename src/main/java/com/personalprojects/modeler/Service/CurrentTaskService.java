@@ -1,22 +1,21 @@
 package com.personalprojects.modeler.Service;
 
 
-import com.personalprojects.modeler.Model.Flow;
-import com.personalprojects.modeler.Model.TaskDefinition;
-import com.personalprojects.modeler.Pojos.HumanTask;
+import com.personalprojects.modeler.Model.TaskTypes;
+import com.personalprojects.modeler.Pojos.TaskDefinition;
+import com.personalprojects.modeler.Pojos.Tasks.HumanTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CurrentTaskService {
 
-    @Autowired
-    HumanTask humanTask;
 
-    public boolean performAction(TaskDefinition currentTaskDefinition, Object payload){
-        if(currentTaskDefinition instanceof HumanTask)
+
+    public Object performAction(TaskDefinition currentTaskDefinition, Object payload){
+        if(currentTaskDefinition.getTaskType().equals(TaskTypes.HUMAN))
         {
-           return humanTask.completeTask(payload);
+            return currentTaskDefinition.getStepsToPerform();
         }
 return  false;
 

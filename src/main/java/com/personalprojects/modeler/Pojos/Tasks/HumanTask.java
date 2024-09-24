@@ -1,19 +1,21 @@
-package com.personalprojects.modeler.Pojos;
+package com.personalprojects.modeler.Pojos.Tasks;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.personalprojects.modeler.Model.TaskDefinition;
+import com.personalprojects.modeler.Pojos.FormPojo;
+import com.personalprojects.modeler.Pojos.PreConditions;
+import com.personalprojects.modeler.Pojos.TaskDefinition;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Setter
 @Getter
-@Component
+
 public class HumanTask extends TaskDefinition {
 
     private FormPojo formElements;
@@ -25,7 +27,6 @@ public class HumanTask extends TaskDefinition {
      * perform that
      * @return
      */
-
     @Override
     public Object getStepsToPerform() {
        if(this.formElements != null){

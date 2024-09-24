@@ -20,16 +20,16 @@ public class ActionController {
     @PostMapping("{flowId}/initiate")
     private ResponseEntity<?> performAction (@PathVariable UUID flowId) {
         try{
-            actionService.initiateAction(flowId);
-            return new ResponseEntity<>(HttpStatus.OK);
+           Object res =  actionService.initiateAction(flowId);
+            return new ResponseEntity<>(res,HttpStatus.OK);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    @PostMapping("{flowId}/complete")
+    @PostMapping("{flowId}/complete/{currentTaskId}")
     private ResponseEntity<?> continueToNextTask(@PathVariable UUID flowId,
-                                                 @RequestBody String currentTaskId,
+                                                 @PathVariable String currentTaskId,
                                                  @RequestBody Object payload){
         try{
             actionService.moveNext(flowId,currentTaskId,payload);
