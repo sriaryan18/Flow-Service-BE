@@ -15,7 +15,7 @@ import lombok.Data;
 
 @Data
 @Entity(name = "task_definition")
-class TaskDefinition {
+public class TaskDefinition {
 
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
