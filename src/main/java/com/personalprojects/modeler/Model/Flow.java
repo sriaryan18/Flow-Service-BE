@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
-
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -22,21 +21,21 @@ import java.util.UUID;
 @Table(name = "process_flow")
 public class Flow {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.UUID)
+  private UUID id;
 
-    private String name;
+  private String name;
 
-    @Nonnull
-    private String startTaskKey;
+  @Nonnull
+  private String startTaskKey;
 
-    @JdbcTypeCode(SqlTypes.JSON)
-    private JsonNode currentTaskDetails;
+  @JdbcTypeCode(SqlTypes.JSON)
+  private JsonNode currentTaskDetails;
 
-    @JdbcTypeCode(SqlTypes.JSON)
-    private List<TaskDefinition> taskDefinitions;
+  @JdbcTypeCode(SqlTypes.JSON)
+  private List<String> taskDefinitionNames;
 
-
+  // this is a test coment to see how nvim looks at when used with neovim
 
 }
