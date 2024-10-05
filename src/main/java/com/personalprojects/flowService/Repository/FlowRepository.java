@@ -1,6 +1,6 @@
-package com.personalprojects.modeler.Repository;
+package com.personalprojects.flowService.Repository;
 
-import com.personalprojects.modeler.Model.Flow;
+import com.personalprojects.flowService.Model.Flow;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

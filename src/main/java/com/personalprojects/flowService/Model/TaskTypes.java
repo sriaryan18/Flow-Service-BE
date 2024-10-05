@@ -1,4 +1,4 @@
-package com.personalprojects.modeler.Model;
+package com.personalprojects.flowService.Model;
 
 public enum TaskTypes {
     HUMAN,

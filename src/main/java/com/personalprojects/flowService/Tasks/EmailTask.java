@@ -1,4 +1,4 @@
-package com.personalprojects.modeler.Tasks;
+package com.personalprojects.flowService.Tasks;
 
 /**
  * EmailTask

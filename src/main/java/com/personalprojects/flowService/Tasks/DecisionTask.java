@@ -1,6 +1,6 @@
-package com.personalprojects.modeler.Tasks;
+package com.personalprojects.flowService.Tasks;
 
-import com.personalprojects.modeler.Model.TaskDefinition;
+import com.personalprojects.flowService.Model.TaskDefinition;
 
 class DecisionTask extends TaskDefinition {
 

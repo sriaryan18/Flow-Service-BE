@@ -1,9 +1,8 @@
-package com.personalprojects.modeler.Controller;
+package com.personalprojects.flowService.Controller;
 
 
-import com.personalprojects.modeler.Model.Flow;
-import com.personalprojects.modeler.Pojos.TaskDefinition;
-import com.personalprojects.modeler.Repository.FlowRepository;
+import com.personalprojects.flowService.Model.Flow;
+import com.personalprojects.flowService.Repository.FlowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

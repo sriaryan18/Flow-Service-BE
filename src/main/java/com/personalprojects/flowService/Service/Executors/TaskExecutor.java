@@ -1,8 +1,8 @@
-package com.personalprojects.modeler.Service.Executors;
+package com.personalprojects.flowService.Service.Executors;
 
 import java.util.List;
 
-import com.personalprojects.modeler.Model.TaskDefinition;
+import com.personalprojects.flowService.Model.TaskDefinition;
 
 /**
  * TaskExecutor

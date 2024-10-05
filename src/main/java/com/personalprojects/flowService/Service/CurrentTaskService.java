@@ -1,10 +1,8 @@
-package com.personalprojects.modeler.Service;
+package com.personalprojects.flowService.Service;
 
 
-import com.personalprojects.modeler.Model.TaskTypes;
-import com.personalprojects.modeler.Pojos.TaskDefinition;
-import com.personalprojects.modeler.Pojos.Tasks.HumanTask;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.personalprojects.flowService.Model.TaskDefinition;
+import com.personalprojects.flowService.Model.TaskTypes;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,3 +19,4 @@ return  false;
 
     }
 }
+5

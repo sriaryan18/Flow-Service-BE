@@ -1,4 +1,4 @@
-package com.personalprojects.modeler;
+package com.personalprojects.flowService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

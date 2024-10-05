@@ -1,4 +1,4 @@
-package com.personalprojects.modeler;
+package com.personalprojects.flowService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

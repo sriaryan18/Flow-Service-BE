@@ -1,10 +1,10 @@
-package com.personalprojects.modeler.Service.Executors;
+package com.personalprojects.flowService.Service.Executors;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.personalprojects.modeler.Tasks.HumanTask;
+import com.personalprojects.flowService.Tasks.HumanTask;
 
 /**
  * HumanTaskExecutor

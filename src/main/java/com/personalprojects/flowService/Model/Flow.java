@@ -1,7 +1,6 @@
-package com.personalprojects.modeler.Model;
+package com.personalprojects.flowService.Model;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.personalprojects.modeler.Pojos.TaskDefinition;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,7 +10,6 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 @Data
