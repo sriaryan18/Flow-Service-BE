@@ -2,6 +2,7 @@ package com.personalprojects.flowService.utils;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class ExternalService {
   private String serviceName;
@@ -55,4 +56,12 @@ public class ExternalService {
   public void setEndpoints(List<Map<String, String>> endpoints) {
     this.endpoints = endpoints;
   }
+
+  public Optional<String> getEndPointByName(String name){
+    return this.endpoints.stream()
+            .filter(endpoint -> name.equalsIgnoreCase(endpoint.get("name")))
+            .map(endpoint -> endpoint.get("endpoint"))
+            .findFirst();
+  }
+
 }
